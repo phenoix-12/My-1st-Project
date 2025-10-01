@@ -1,1 +1,1 @@
-All Resource use From Local Devices are Stored Here.
+All resources use from local device are kept in this directory.
