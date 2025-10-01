@@ -1,0 +1,44 @@
+/*Custom CSS for theme variables and animations*/
+      :root{
+        --bg-color: #cb9cfa; /* CUSTOMIZE HERE: Light theme background, change to your preferred light color if different */
+        --primary: #9B51E0; /*Purple primary colour*/
+        --accent: #FF61A6; /*Pink accent color*/
+        --text-main: #2D2D2D; /*Main text color*/
+        --text-secondary: #555555; /*Secondary text color*/
+      }
+      .dark-theme{
+        --bg-color: #411284; /*CUSTOMIZE HERE: Dark theme background*/
+        --primary: #BB6BD9; /*Dark theme purple*/
+        --accent: #FF85B3; /*Dark theme pink*/
+        --text-main: #FFFFFF; /*White main text*/
+        --text-secondary: #BBBBBB; /*Grey secondary text*/
+      }
+      body{
+        font-family:'Dancing Script', cursive;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        transition:all 0.3s ease;
+      }
+      .text-primary {color: var(--primary);}
+      .bg-primary {background-color: var(--primary);}
+      .text-accent {color: var(--accent);}
+      .bg-accent {background-color: var(--accent);}
+      .text-secondary {color: var(--text-secondary);}
+      /*Unique animations: Fade-in on scroll and pulse on hover*/
+      .fade-in {
+        opacity: 1;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6 ease;
+      }
+      .fade-in.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .pulse-hover:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
+      }
+      /*Scroll-smooth for navigation*/
+      html {
+        scroll-behavior: smooth;
+      }

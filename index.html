@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hardi Koli | Digital Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="font-sans leading-relaxed">
+        <header class="fixed top-0 w-full bg-white dark:bg-gray-900 shadow-lg z-50 transition-all">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+                <h1 class="text-2xl font-bold text-primary">Hardi Koli</h1> 
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#hero" class="text-secondary hover:text-primary transition">Home</a>
+                    <a href="#about" class="text-secondary hover:text-primary transition">About</a>
+                    <a href="#skills" class="text-secondary hover:text-primary transition">Skills</a>
+                    <a href="#projects" class="text-secondary hover:text-primary transition">Projects</a>
+                    <!--<a href="#contact" class="text-secondary hover:text-primary transition">Contact</a>-->
+                </nav>                
+                <button id="theme-toggle" class="bg-accent text-white px-4 py-2 rounded-full hover:bg-primary transition">Toggle Dark Mode</button>
+                <div class="md:hidden flex space-x-2">
+                    <a href="#hero" class="text-secondary hover:text-primary">H</a>
+                    <a href="#about" class="text-secondary hover:text-primary">A</a>
+                    <a href="#skills" class="text-secondary hover:text-primary">S</a>
+                    <a href="#projects" class="text-secondary hover:text-primary">P</a>
+                    <!--<a href="#contact" class="text-secondary hover:text-primary">C</a>-->
+                </div>
+            </div>
+        </header>
+        <!-- Hero Section with Placeholder Image -->
+        <section id="hero" class="h-screen flex flex-col justify-center items-center pt-20 px-4">
+            <div class="fade-in text-center">
+                <div class="mb-6">
+                    <!-- Image: Professional headshot placeholder. CUSTOMIZE: Replace URL with your actual image, update alt text. Error handling: If fails, shows a fallback gradient. -->
+                    <img src="-----------" alt="Professional headshot of a young Web Developer casual attire standing confidently in a modern office with laptops and code backgrounds, smiling and looking directly at the camera" class="w-48 h-48 rounded-full mx-auto pulse-hover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                    <!-- Fallback initial circle -->
+                    <div class="w-48 h-48 rounded-full mx-auto bg-gradient-to-br from-primary to-accent flex items-center justify-center text-3xl font-bold text-white hidden" style="margin-top: -12rem;">HK</div> 
+                </div>
+                <!-- CUSTOMIZE HERE: Replace "Your Name" with your name -->
+                <h1 class="text-5xl font-bold text-primary mb-4">Welcome, I'm Hardi Koli</h1>                 
+                <!-- CUSTOMIZE HERE: Update title/description -->
+                <p class="text-xl text-secondary mb-8">Student</p> 
+                <!-- CUSTOMIZE HERE: Edit bio text -->
+                <p class="max-w-2xl mx-auto text-lg mb-8"><!--I create innovative web solutions, from responsive front-ends to robust back-ends.--> Explore my work and let's build something amazing together!</p> 
+                <a href="#projects" class="bg-primary text-white px-8 py-3 rounded-full hover:bg-accent transition pulse-hover">View My Work</a>
+            </div>
+        </section>
+    <!-- About Section -->
+        <section id="about" class="py-16 px-4 bg-white dark:bg-gray-800 transition-all">
+            <div class="max-w-7xl mx-auto text-center fade-in">
+                <h2 class="text-4xl font-bold text-primary mb-6">About Me</h2>
+                <!-- CUSTOMIZE HERE: Add your personal story, skills, interests -->
+                <p class="text-lg text-secondary max-w-4xl mx-auto">My journey in tech started 2024, and I've since developed expertise in HTML, CSS, JavaScript <!--, and frameworks like React-->. I love problem-solving, continuous learning<!--, and collaborating on open-source projects-->. When I'm not coding, you'll find me enjoying my hobby like editing, reading etc..</p> 
+            </div>
+        </section>
+    <!-- Skills Section -->
+        <section id="skills" class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-primary mb-6 text-center">Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">            
+                    <!-- CUSTOMIZE HERE: Add/edit skills, update icons or descriptions as needed -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md pulse-hover fade-in">
+                        <div class="text-4xl font-bold text-accent">HTML</div>
+                        <p class="mt-2 text-secondary">HyperText Markup Language</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md pulse-hover fade-in">
+                        <div class="text-4xl font-bold text-accent">PY</div>
+                        <p class="mt-2 text-secondary">Python</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md pulse-hover fade-in">
+                        <div class="text-4xl font-bold text-accent">CSS</div>
+                        <p class="mt-2 text-secondary">Cascading Style Sheets</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md pulse-hover fade-in">
+                        <div class="text-4xl font-bold text-accent">JS</div>
+                        <p class="mt-2 text-secondary">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--Projects Section-->
+    <section id="projects" class="py-16 px-4 bg-white dark:bg-dark-800 transition-all">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-primary mb-6 text-center">My Projects</h2>
+        <div classs="grid grid-cols-1 md:grid-cols2 lg:grid-cols-3 gap-8">
+        <!--Project 1 : Customize Here: update title, description, linnk, and image alt. Error handling includes fallback text.-->
+        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md pulse-hover fade-in">
+          <div class="card-image mb-4">
+            <img src="-----------" alt="Interactive web application screenshot showing a responsive dashboard with charts and user interface elements in a modern flat design" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+            <!--Fallback box-->
+            <div class="h-64 bg-gradient-to-r from-primary to-accent flex items-center justify-center text-white hidden">Project Preview</div>
+          </div>
+          <h3 class="text-2xl font-bold text-primary mb-2">My README.md</h3>
+          <p class="text-secondary mb-4">A Website Showing My README.md. My 1st Work on Github.</p>
+          <!--Customize Here: Add real Github links-->
+          <a href="https://github.com/phenoix-12/phenoix-12" class="bg-accent text-white px-4 py-2 rounded-full hover:bg-primary transition">ViewCode</a>
+        </div>
+      </div>
+    </section>
+    <!--Contact Section-->
+    <section id="contact" class="py-16 px-4">
+      <div class="max-w-7xl mx-auto text-center fade-in">
+        <h2 class="text-4xl font-bold text-primary mb-6">Contact Me</h2>
+        <form class="max-w-xl mx-auto" action="https://formspree.io/f/xpwydnzl" method="post"><!--Add action & method-->
+          <!--Cutomize Here: Optionally replace with backend from handler-->
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" class="w-full p-3 mb-4 border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white transition" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="w-full p-3 mb-4 border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white transition" required>
+          <label for="subject">Subject</label>
+          <input type="text" name="Subject" id="subject" class="w-full p-3 mb-4 border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white transition" required>
+          <label for="message">Message</label>
+          <textarea id="Message" name="message" rows="5" class="w-full p-3 mb-4 border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white transition" required></textarea>
+          <button type="submit" class="bg-primary text-white px-8 py-3 rounded-full hover:bg-accent transition pulse-hover">Send Message</button>
+        </form>
+      </div>
+    </section>
+    
+    <!--Footer-->
+    <footer class="bg-gray-900 text-white py-8 px-4 text-center">
+      <!--Customize Here: Update year and Name-->
+      <p>© 2025 Hardi Koli. All right reserved.</p>
+      <div class="mt-4 flex justify-center space-x-6">
+        <!--Customize Here: Add links to your social profiles (e.g. LinkedIn, Github, etc.)-->
+        <!--Linkedin--><a href="https://www.linkedin.com/in/hardi-yatin-koli-99b875267/" class="hover:text-accent transition">LinkedIn</a>
+        <!--Github--><a href="https://github.com/phenoix-12" class="hover:text-accent transition">GitHub</a>
+        <!--Twitter--><a href="https://x.com/hardi_koli" class="hover:text-accent transition">Twitter</a>                
+      </div>
+    </footer>
+        
+    <!--Scripts-->
+        <script src="Theme/Theme-Toggle.js"> </script>
+    </body>
+</html>
